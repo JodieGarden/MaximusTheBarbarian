@@ -2,6 +2,21 @@ var assert = require('assert');
 var barbarian = require('../barbarian');
 
 describe('Barbarian', function(){
+  it('should return his fabulous name', function(){
+    assert.equal("Maximus", barbarian.name)
+  })
+  it('should return his awesome weapon', function(){
+    assert.equal("Unicorn Horn", barbarian.weapon)
+  })
+  it('should return his health', function(){
+    assert.equal(100, barbarian.health)
+  })
+  it('should return his level of rage', function(){
+    assert.equal(0, barbarian.anger)
+  })
+  it('should return his strength', function(){
+    assert.equal(500, barbarian.strength)
+  })
   it('should drink favbeer and be so happy', function(){
     barbarian.drinkAlcohols("ShitBrew");
     assert.equal(250, barbarian.health);
